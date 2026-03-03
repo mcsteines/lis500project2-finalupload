@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Educational resources on implicit bias and intersectionality for first-year college students">
     <title>Resources | LIS 500 Project</title>
-    <link rel="stylesheet" href="stylepage.css">
+    <link rel="stylesheet" href="css/stylepage.css">
     <!-- Google Fonts for enhanced typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,6 +58,7 @@
                         <li><a href="#implicit-bias">What is Implicit Bias?</a></li>
                         <li><a href="#intersectionality">What is Intersectionality?</a></li>
                         <li><a href="#iat-reflection">My IAT Reflection</a></li>
+                        <li><a href="#intersectionality-tech">Intersectionality in Technology Design</a></li>
                         <li><a href="#resources">Recommended Resources</a></li>
                         <li><a href="#take-action">Taking Action</a></li>
                     </ul>
@@ -178,6 +179,95 @@
                     </p>
                 </section>
 
+
+                <!-- intersectionality in Technology Design section -->
+                <section class="resource-section" id="intersectionality-tech">
+                    <h3>Intersectionality in Technology Design</h3>
+                    <p>
+                        When AI systems fail, they rarely fail evenly. Facial recognition software developed by major 
+                        vendors has been shown to misidentify darker-skinned women at error rates up to 34 percentage 
+                        points higher than for lighter-skinned men—a disparity that Joy Buolamwini and Timnit Gebru 
+                        documented in their landmark 2018 Gender Shades study. To understand why these gaps persist, 
+                        it is not enough to blame careless engineers. The more revealing question is an economic one: 
+                        what incentive structures make this outcome predictable?
+                    </p>
+
+                    <!--  Gender Shades stat -->
+                    <div style="background: linear-gradient(135deg, #f0f4ff 0%, #e8f0fe 100%); border-left: 4px solid #4a6fa5; border-radius: 8px; padding: 1.1rem 1.4rem; margin: 1.2rem 0; display: flex; gap: 0.9rem; align-items: flex-start;">
+                        <span style="font-size: 1.5rem; line-height: 1;">🔍</span>
+                        <div>
+                            <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: #4a6fa5; margin-bottom: 0.3rem;">Key Finding</strong>
+                            <p style="margin: 0; font-size: 0.95rem; color: #2d3748;">The <em>Gender Shades</em> study (Buolamwini &amp; Gebru, 2018) found facial recognition error rates for darker-skinned women were up to <strong>34 percentage points higher</strong> than for lighter-skinned men—across products from IBM, Microsoft, and Face+.</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        Profit-maximization logic offers a partial answer. Bias auditing is costly—it requires diverse 
+                        evaluation datasets, external review, and engineering time that delays product release. For firms 
+                        competing in fast-moving markets, these costs are easy to defer, especially when the populations 
+                        most harmed by errors hold less purchasing power and are therefore less central to the target 
+                        market. A resume-screening algorithm trained primarily on historically successful employee 
+                        profiles at a predominantly white firm does not need to be explicitly discriminatory to 
+                        systematically disadvantage Black and Latina applicants—it simply needs to optimize for a 
+                        pattern that existing inequality has already shaped. The market, left to itself, has little 
+                        mechanism to correct this: the firm captures the efficiency gains while the excluded applicants 
+                        absorb the cost.
+                    </p>
+
+                    <!--  Market failure / underinvestment -->
+                    <div style="background: linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%); border-left: 4px solid #e6a817; border-radius: 8px; padding: 1.1rem 1.4rem; margin: 1.2rem 0; display: flex; gap: 0.9rem; align-items: flex-start;">
+                        <span style="font-size: 1.5rem; line-height: 1;">💡</span>
+                        <div>
+                            <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: #b07d12; margin-bottom: 0.3rem;">Economic Insight</strong>
+                            <p style="margin: 0; font-size: 0.95rem; color: #2d3748;">Bias auditing is a <strong>public good problem</strong>: the costs are borne privately by the firm, but the benefits—fairer outcomes—are distributed across society. Without regulation or liability, rational firms consistently underinvest. This is a textbook case of market failure.</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        This is a classic externality problem. When Amazon's internal recruiting tool downranked 
+                        résumés that included the word "women's" (as in women's chess club), the economic harm—lost 
+                        income, foregone career advancement—was distributed outward onto job seekers, not absorbed by 
+                        the firm. In healthcare AI, similar dynamics emerge: predictive models trained on claims data 
+                        from commercially insured patients encode the lower healthcare utilization of Black patients 
+                        not as a sign of fewer needs, but as lower cost—a proxy that then underestimates illness 
+                        severity and deprioritizes care.
+                    </p>
+
+                    <!--  Real-world examples -->
+                    <div style="background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border-left: 4px solid #3a9e6e; border-radius: 8px; padding: 1.1rem 1.4rem; margin: 1.2rem 0; display: flex; gap: 0.9rem; align-items: flex-start;">
+                        <span style="font-size: 1.5rem; line-height: 1;">📌</span>
+                        <div>
+                            <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: #3a9e6e; margin-bottom: 0.3rem;">Real-World Cases</strong>
+                            <p style="margin: 0; font-size: 0.95rem; color: #2d3748;"><strong>Amazon (2018):</strong> An AI recruiting tool penalized résumés mentioning "women's" organizations—quietly scrapped after internal review. <br><strong>Healthcare AI (Obermeyer et al., 2019):</strong> A widely used algorithm systematically underestimated the health needs of Black patients by using healthcare <em>cost</em> as a proxy for <em>need</em>—a variable already distorted by unequal access.</p>
+                        </div>
+                    </div>
+
+                    <p>
+                        Intersectionality sharpens this analysis considerably. Race and gender alone do not fully 
+                        predict who bears the greatest algorithmic harm—class, geography, immigration status, and 
+                        disability interact with these axes to produce concentrated vulnerabilities that single-axis 
+                        analyses miss. A low-income Black woman navigating both a biased hiring algorithm and a 
+                        healthcare AI that underestimates her pain does not experience these as separate events. She 
+                        is subject to compounding exclusions that reinforce one another, accumulating economic 
+                        disadvantage in ways that aggregate statistics obscure. This is not incidental to how 
+                        technology markets are structured—it reflects them. Data is not neutral; it is a record of 
+                        who had access, who was counted, and whose behavior was deemed worth studying. Until the 
+                        incentives to invest in representational equity are built into procurement standards, 
+                        regulatory frameworks, or liability law, firms will continue to find it rational to externalize 
+                        these costs onto those least positioned to challenge them.
+                    </p>
+
+                    <!--  intersectionality as multiplier -->
+                    <div style="background: linear-gradient(135deg, #fdf4ff 0%, #f3e8ff 100%); border-left: 4px solid #8b5cf6; border-radius: 8px; padding: 1.1rem 1.4rem; margin: 1.2rem 0; display: flex; gap: 0.9rem; align-items: flex-start;">
+                        <span style="font-size: 1.5rem; line-height: 1;">⚠️</span>
+                        <div>
+                            <strong style="display: block; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: #7c3aed; margin-bottom: 0.3rem;">Intersectionality &amp; Compounding Harm</strong>
+                            <p style="margin: 0; font-size: 0.95rem; color: #2d3748;">Algorithmic harms are not simply <em>additive</em>—they are <strong>multiplicative</strong>. A low-income Black woman facing bias in both hiring and healthcare AI encounters a compounding disadvantage that neither a race-only nor a gender-only analysis would capture. Single-axis fairness metrics mask this by design.</p>
+                        </div>
+                    </div>
+
+                </section>
+
                 <!-- list of academic and educational resources -->
                 <section class="resource-section" id="resources">
                     <h3>Learn More: Recommended Resources</h3>
@@ -200,12 +290,6 @@
                             </a>
                             <p>Overview of implicit bias research and its implications from the APA</p>
                         </li>
-                        <li>
-                            <a href="https://kirwaninstitute.osu.edu/" target="_blank" rel="noopener noreferrer">
-                                Kirwan Institute for the Study of Race and Ethnicity
-                            </a>
-                            <p>Research and resources on implicit bias and structural racialization</p>
-                        </li>
                     </ul>
 
                     <h4>Learning About Intersectionality:</h4>
@@ -216,12 +300,7 @@
                             </a>
                             <p>Learn about intersectionality from the scholar who coined the term</p>
                         </li>
-                        <li>
-                            <a href="https://www.nationalwomenslaw.org/about/what-is-intersectionality" target="_blank" rel="noopener noreferrer">
-                                National Women's Law Center: What is Intersectionality?
-                            </a>
-                            <p>Accessible explanation of intersectionality and its applications</p>
-                        </li>
+                
                         <li>
                             <a href="https://www.ted.com/talks/kimberle_crenshaw_the_urgency_of_intersectionality" target="_blank" rel="noopener noreferrer">
                                 TED Talk: The Urgency of Intersectionality
@@ -247,7 +326,7 @@
                     </ul>
                 </section>
 
-                <!-- Call to action encouraging continued learning -->
+                <!-- encouraging continued learning -->
                 <section class="resource-section" id="take-action">
                     <h3>Taking Action</h3>
                     <p>
