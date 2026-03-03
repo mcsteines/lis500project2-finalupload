@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wuziyang/Matt's LIS 500 project exploring implicit bias, intersectionality, and equity in technology">
+    <title>Home | LIS 500 Project</title>
+    <link rel="stylesheet" href="css/stylepage.css">
+    <!-- Google Fonts for enhanced typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip to main content link for keyboard and screen reader users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- Main header section containing site branding and navigation -->
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">LIS 500 Project 2</h1>
+                <!-- Mobile menu toggle button -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            <!-- Primary navigation menu - accessible across all pages -->
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-menu" id="primary-nav">
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="techhero.html">Tech Hero</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content area for the splash page -->
+    <main id="main-content" role="main">
+        <!-- Animated scroll progress indicator -->
+        <div class="progress-bar" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        
+        <!-- Hero section designed to capture attention and introduce the site's purpose -->
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h2 id="hero-title" class="hero-title">Exploring Bias, Identity, and Innovation</h2>
+                <p class="hero-subtitle">This site looks at how technology connects to equity and identity.</p>
+                <p class="hero-description">
+                    This site examines how implicit biases shape our digital world and highlights 
+                    voices working to create more equitable technological futures. On this site, we look at how bias shows up in technology and what it means to design more responsibly.
+                </p>
+                
+                <!-- Featured video introduction -->
+                <div class="video-container">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/nLjFTHTgEVU" 
+                        title="The Urgency of Intersectionality - Kimberlé Crenshaw TED Talk"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen
+                        loading="lazy">
+                    </iframe>
+                    <p class="video-caption">Kimberlé Crenshaw explains intersectionality and its importance in understanding identity and discrimination</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <!-- Introduction section providing overview of site content -->
+        <section class="intro-cards" aria-label="Site sections overview">
+            <div class="container">
+                <div class="card-grid">
+                    <!-- Card highlighting the About page with image -->
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80" 
+                                 alt="Diverse group of students collaborating on a project" 
+                                 loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>About</h3>
+                            <p>Learn about my background in economics and information science, and my journey understanding bias and intersectionality.</p>
+                            <a href="about.html" class="btn" aria-label="Read more about Wuziyang Zhang">Read More</a>
+                        </div>
+                    </article>
+
+                    <!-- Card highlighting the Resources page with image -->
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80" 
+                                 alt="Open books and study materials on a library desk" 
+                                 loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Resources</h3>
+                            <p>Explore educational materials on implicit bias and intersectionality, designed for first-year college students.</p>
+                            <a href="resources.html" class="btn" aria-label="Explore educational resources">Explore</a>
+                        </div>
+                    </article>
+
+                    <!-- Card highlighting the Tech Hero page with image -->
+                    <article class="card">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80" 
+                                 alt="Professional woman working on technology project" 
+                                 loading="lazy">
+                        </div>
+                        <div class="card-content">
+                            <h3>Tech Hero</h3>
+                            <p>Discover the work of a technology professional advancing equity in race, class, and gender.</p>
+                            <a href="techhero.html" class="btn" aria-label="Discover our tech hero profile">Discover</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive quote section with audio -->
+        <section class="quote-section" aria-labelledby="quote-heading">
+            <div class="container">
+                <h2 id="quote-heading" class="sr-only">Featured Quote</h2>
+                <blockquote class="featured-quote">
+                    <p>"If we aren't intersectional, some of us, the most vulnerable, are going to fall through the cracks."</p>
+                    <footer>
+                        <cite>— Kimberlé Crenshaw</cite>
+                    </footer>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <!-- navigation buttons --> 
+    <div class="page-navigation">
+    <a href="about.html" class="btn">Next: About →</a>
+    </div>>
+
+    <!-- Footer section with course information and attribution -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; Wuziyang Zhang & Matt Steines | LIS 500 Project 2</p>
+            <p class="accessibility-statement">
+                <a href="#main-content">Back to top</a>
+            
+            </p>
+        </div>
+    </footer>
+
+ 
+</body>
+</html>

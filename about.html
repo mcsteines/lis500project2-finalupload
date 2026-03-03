@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About our team - Information Science students exploring technology and equity">
+    <title>About | LIS 500 Project</title>
+    <link rel="stylesheet" href="css/stylepage.css">
+    <!-- Google Fonts for enhanced typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Two-column layout for team members */
+        .team-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin: 3rem 0;
+        }
+        
+        .team-member {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .team-member h3 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .team-member h4 {
+            color: #764ba2;
+            font-size: 1.3rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .team-member .profile-image {
+            width: 100%;
+            max-width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            display: block;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            border: 4px solid #667eea;
+        }
+        
+        .team-member .major {
+            font-size: 1.1rem;
+            color: #555;
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .team-member p {
+            color: #2c3e50;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        .team-member-section {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(102, 126, 234, 0.2);
+        }
+        
+        .team-member-section:last-child {
+            border-bottom: none;
+        }
+        
+        /* Mobile responsive */
+        @media (max-width: 968px) {
+            .team-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+        
+        /* Highlight box for special content */
+        .highlight-box {
+            background: rgba(102, 126, 234, 0.1);
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+        }
+        
+        .highlight-box h5 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Main header  -->
+    <header role="banner">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Equity in Technology</h1>
+                <!-- Mobile menu toggle button -->
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-nav">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-menu" id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active" aria-current="page">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="techhero.html">Tech Hero</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Team Member Info -->
+    <main id="main-content" role="main">
+        <!-- Animated scroll progress indicator -->
+        <div class="progress-bar" role="progressbar" aria-label="Page scroll progress" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+        
+        <div class="container">
+            <article class="content-wrapper">
+                <h2 class="page-title">About Our Team</h2>
+                <p class="page-intro">
+                    We are Information Science students at UW-Madison, passionate about exploring 
+                    the intersection of technology, data, and social equity.
+                </p>
+
+                <!-- Two-Member Setup -->
+                <div class="team-container">
+                    
+                    <!-- LEFT COLUMN: Wuziyang Zhang -->
+                    <div class="team-member" id="wuziyang">
+                        <img src="WechatIMG444.jpeg" 
+                             alt="Wuziyang Zhang profile photo" 
+                             class="profile-image"
+                             loading="lazy">
+                        
+                        <h3>Wuziyang Zhang</h3>
+                        <p class="major">Economics & Information Science</p>
+                        
+                        <div class="team-member-section">
+                            <h4>Who I Am</h4>
+                            <p>
+                                I'm pursuing a dual major in Economics and Information Science. 
+                                This unique combination allows me to explore how data, systems, and human behavior 
+                                intersect in our increasingly digital world.
+                            </p>
+                            <p>
+                                I'm deeply interested in the ways technology shapes society, particularly in areas 
+                                like artificial intelligence, product management, and the ethical implications of 
+                                digital innovation. My goal is to work at the intersection of technology and social 
+                                impact, creating products and systems that are not only functional but also equitable 
+                                and inclusive.
+                            </p>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>My Interests</h4>
+                            <p>
+                                My passion for technology extends beyond coding and algorithms. I'm fascinated by how 
+                                technological decisions impact real people's lives, especially those from marginalized 
+                                communities. Through my studies in economics, I've learned to analyze systems and 
+                                incentives. Through information science, I've learned how information flows, how 
+                                interfaces shape behavior, and how design choices can either reinforce or challenge 
+                                existing inequalities.
+                            </p>
+                            <p>
+                                I'm particularly drawn to product management because it sits at the 
+                                nexus of technology, business, and human needs. Product managers must balance technical 
+                                feasibility with user experience and business objectives, but I believe they also have a 
+                                responsibility to consider equity and social impact in every decision.
+                            </p>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>Reflection from Project 1</h4>
+                            <p>
+                                Working on Project 1 was an eye-opening experience that challenged many of my assumptions 
+                                about bias and fairness. Before this course, I understood bias primarily as an individual 
+                                problem—something that "bad people" had. But through our readings and discussions, I've 
+                                come to understand that implicit bias is far more pervasive and subtle.
+                            </p>
+                            <p>
+                                One of the most striking realizations was recognizing how my own background influences my 
+                                perspectives on technology. As someone interested in AI and product development, I had to 
+                                confront how easily bias can be embedded in algorithms and design choices, often 
+                                unintentionally. The systems we build reflect the assumptions and blind spots of their 
+                                creators, which is why diverse perspectives in tech are not just a nice-to-have but a 
+                                necessity.
+                            </p>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>Understanding Intersectionality</h4>
+                            <p>
+                                My understanding of intersectionality has deepened through both academic study and 
+                                personal experience. Growing up, I witnessed how different aspects of identity—race, 
+                                class, education level, and nationality—interact in complex ways to shape people's 
+                                opportunities and experiences.
+                            </p>
+                            <div class="highlight-box">
+                                <h5>Key Insight</h5>
+                                <p>
+                                    A person's access to technology isn't just about income, it's also shaped by their 
+                                    geographic location, language background, educational system, and cultural context. 
+                                    Someone might have the financial means to buy a computer but lack the support systems 
+                                    or educational background to use it effectively.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>Looking Forward</h4>
+                            <p>
+                                As I continue my studies and prepare for a career in technology, I'm committed to 
+                                bringing these insights with me. Whether I'm building AI systems, managing product 
+                                development, or making strategic decisions, I want to ensure that equity and inclusion 
+                                are central considerations, not just afterthoughts.
+                            </p>
+                            <p>
+                                This website represents not just a course requirement, but a statement of values and 
+                                intentions. It's a reminder to myself and others that technology is never neutral, and 
+                                that we have both the opportunity and the responsibility to shape it in ways that serve 
+                                everyone.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN: Matt Steines -->
+                    <div class="team-member" id="matt">
+                        <img src="WechatIMG443.jpeg" 
+                             alt="Matt Steines profile photo" 
+                             class="profile-image"
+                             loading="lazy">
+                        
+                        <h3>Matt Steines</h3>
+                        <p class="major">Information Science with Data Science Certificate</p>
+                        
+                        <div class="team-member-section">
+                            <h4>Introduction</h4>
+                            <p>
+                                Hi! I'm Matt Steines. I am a senior here at UW-Madison in my final semester. I am 
+                                getting a degree in Information Science with a certificate in Data Science. 
+                                My coursework has varied from machine learning, to statistical modeling to learning about 
+                                data visualization with Tableau. I hope to take my well-rounded degree and find a job that 
+                                suits my skillset well.
+                            </p>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>My Interests</h4>
+                            <p>
+                                As a kid I was always very interested in tech, and felt that studying it and its 
+                                interactions with people was the clear next step for me. My coursework has been quite 
+                                varied so I'm excited to see what's out there.
+                            </p>
+                            <div class="highlight-box">
+                                <h5>Beyond Tech</h5>
+                                <p>
+                                    Tech aside, I'm a huge fan of music! Specifically, I love to collect records and talk 
+                                    about music. There's something special about the tangible experience of vinyl records 
+                                    and the stories behind each album.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>Technical Background</h4>
+                            <p>
+                                My experience with data science has given me a strong foundation in understanding how 
+                                information systems work and how data shapes our digital world. Through courses in:
+                            </p>
+                            <ul>
+                                <li>Machine Learning: Understanding how algorithms learn from data and make predictions</li>
+                                <li>Statistical Modeling: Building models to analyze patterns and relationships in data</li>
+                                <li>Data Visualization (Tableau): Creating clear, compelling visual representations of complex data</li>
+                            </ul>
+                            <p>
+                                These skills have prepared me to approach problems analytically while keeping the human 
+                                element in understanding that behind every dataset are real people and real stories.
+                            </p>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>Reflection from Project 1</h4>
+                            <p>
+                                I learned a lot about internal bias, specifically with how we perceive the different 
+                                fields (Liberal Arts vs. Sciences). The test itself wasn't overly impactful as much as 
+                                the thoughts I had while taking it.
+                            </p>
+                            <p>
+                                What surprised me the most was the realization that even as someone who sees themself as an open minded individual, 
+				I carry unconscious biases that influence how I interpret 
+                                information and make decisions. By realizing this, I can hopefully have more objective viewpoints
+                            </p>
+                            <div class="highlight-box">
+                                <h5>Personal Reflection</h5>
+                                <p>
+                                    The process of examining my own biases, especially those based around academic disciplines and 
+                                    how we value different types of knowledge has allowed me more to be more conscious of the need to 
+                                    approach problems from multiple perspectives. Technical skills are clearly important, but so 
+                                    is understanding the broader social context in which technology operates.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="team-member-section">
+                            <h4>Looking Forward</h4>
+                            <p>
+                                I plan to apply both the hard skills and soft skills I've learned here at UW to maximize 
+                                my potential in any role I take. Regardless of whether or not these soft skills actually 
+                                apply directly to a specific job, I feel they are vastly important for my overall 
+                                experience as a student and working person.
+                            </p>
+
+                            <p>
+                                My diverse coursework in machine learning, statistics, and data visualization, combined 
+                                with the critical thinking skills developed in courses like this, has prepared me to 
+                                contribute meaningfully to creating technology that serves everyone equitably.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- shared team vision section -->
+                <section class="about-section" style="margin-top: 3rem; padding-top: 2rem; border-top: 3px solid #667eea;">
+                    <h3 style="text-align: center; font-size: 2rem; color: #667eea;">Our Shared Vision</h3>
+                    <p style="text-align: center; font-size: 1.1rem; max-width: 800px; margin: 0 auto 2rem;">
+                        Together, we bring alternative but complementary perspectives to understanding technology's role in society. 
+                        Wuziyang's focus on economics and product management, combined with Matt's expertise in data 
+                        science and machine learning, allows us to approach problems from both strategic and technical 
+                        angles.                    </p>
+                    
+                    <div class="highlight-box" style="max-width: 900px; margin: 2rem auto; background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1)); border-left: 4px solid #764ba2;">
+                        <h5 style="color: #764ba2; font-size: 1.2rem;">Why This Matters</h5>
+<!-- we found our secondary focuses(data science/economics) provided us with a relatively unique experience when speaking about this -->
+                        <p> 
+                            As the next generation of technologists, we have both the opportunity and responsibility to shape 
+                            how technology evolves. Through an educational focus on social knowledge on top of our technical skills, we can create a technological future that includes and benefits all. 
+                        </p>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!-- navigation -->
+     <div class="page-navigation">
+    <a href="index.html" class="btn">← Home</a>
+    <a href="resources.html" class="btn">Next: Resources →</a>
+    </div>
+
+
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; Wuziyang Zhang & Matt Steines | LIS 500 Project 2</p>
+            <p class="accessibility-statement">
+                <a href="#main-content">Back to top</a>
+
+            </p>
+        </div>
+    </footer>
+
+   </body>
+</html>
