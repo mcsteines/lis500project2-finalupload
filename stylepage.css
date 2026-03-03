@@ -602,6 +602,13 @@ footer p {
     margin: 3rem 0;
 }
 
+/* --- Align button --- */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 /* --- Print --- */
 @media print {
     header, footer, nav, .btn, .progress-bar, .video-container, .stats-section {
